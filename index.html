@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>My Todo's</h1>
+    </header>
+    <div class="main-input main">
+        <div class="main-container">
+            <div class="add">
+                <div class="sec-title">Add Task</div>
+                <input class="input" type="text" id="todo" placeholder="add todo text here">
+                <button onclick="addTodo()">Add</button>
+            </div>
+            <div class="save">
+                <div class="sec-title">Edit Task</div>
+                <input class="input" type="text" id="todoEdit" placeholder="edit todo list here">
+                <button onclick="saveEditedTask()">Save</button>
+            </div>
+        </div>
+    </div>
+    <div class="main-list main">
+        <div class="list-title">Daily Todo's</div>
+        <div class="list-container">
+            <div id="todo-list">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
